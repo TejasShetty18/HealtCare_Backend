@@ -26,7 +26,7 @@ const Home = () => {
 
   const fetchAllDoctors = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/fetchalldoctor");
+      const response = await axios.get("https://healtcare-frontend.onrender.com/fetchalldoctor");
       setDoctors(response.data.list || []);
     } catch (error) {
       console.error("Error fetching doctors:", error);
@@ -43,7 +43,7 @@ const Home = () => {
     if (!search.trim()) return fetchAllDoctors(); // Fetch all doctors if search is empty
 
     try {
-      const response = await axios.post("http://localhost:5000/searchDoctor", {
+      const response = await axios.post("https://healtcare-frontend.onrender.com/searchDoctor", {
         firstName: search.split(" ")[0], // Assuming the first part is first name
         lastName: search.split(" ")[1] || "", // Assuming the second part is last name, if provided
       });

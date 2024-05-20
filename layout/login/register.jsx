@@ -36,7 +36,7 @@ const MyForm = () => {
       const user = userCredential.user;
 
       // Send user data to backend for saving in Firestore
-      const response = await fetch("http://localhost:5000/register", {
+      const response = await fetch("https://healtcare-frontend.onrender.com/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

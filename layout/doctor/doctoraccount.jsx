@@ -99,7 +99,7 @@ const DoctorAccount = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/addDoctor",
+        "https://healtcare-frontend.onrender.com/addDoctor",
         updatedFormData
       );
 

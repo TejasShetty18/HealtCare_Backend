@@ -30,7 +30,7 @@ const Appointments = () => {
 
   const fetchAppointments = async (email) => {
     try {
-      const response = await fetch('http://localhost:5000/fetchingAppointment', {
+      const response = await fetch('https://healtcare-frontend.onrender.com/fetchingAppointment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

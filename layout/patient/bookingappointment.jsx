@@ -79,7 +79,7 @@ const BookingAppointment = () => {
 
   const fetchUnavailableSlots = async (date) => {
     try {
-      const response = await axios.post("http://localhost:5000/checkBookedSlots", {
+      const response = await axios.post("https://healtcare-frontend.onrender.com/checkBookedSlots", {
         date: date.format("YYYY-MM-DD"),
         email: formData.email,
       });
@@ -101,7 +101,7 @@ const BookingAppointment = () => {
     };
 
     try {
-      await axios.post("http://localhost:5000/bookingAppointment", appointmentData);
+      await axios.post("https://healtcare-frontend.onrender.com/bookingAppointment", appointmentData);
       alert("Successfully booked appointment");
       form.resetFields(); // Clear form fields
     } catch (error) {

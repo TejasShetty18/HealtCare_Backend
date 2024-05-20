@@ -27,7 +27,7 @@ const MyProfile = () => {
     // Function to fetch doctor profile data
     const fetchDoctorProfile = async () => {
       try {
-        const response = await axios.post("http://localhost:5000/fetchingDoctorprofile", { email });
+        const response = await axios.post("https://healtcare-frontend.onrender.com/fetchingDoctorprofile", { email });
         if (response.status === 200) {
           const doctorProfile = response.data.data[0];
           // Populate the form fields with the fetched data
@@ -57,7 +57,7 @@ const MyProfile = () => {
 
   const onFinish = async (values) => {
     try {
-      const response = await axios.patch("http://localhost:5000/updateDoctor", values);
+      const response = await axios.patch("https://healtcare-frontend.onrender.com/updateDoctor", values);
       if (response.status === 200) {
         console.log("Doctor updated successfully");
         alert("Doctor data updated successfully")

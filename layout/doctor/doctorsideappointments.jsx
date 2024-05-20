@@ -30,7 +30,7 @@ const PatientAppointment = () => {
 
   const fetchAppointments = async (email) => {
     try {
-      const response = await fetch('http://localhost:5000/fetchingAllAppointment', {
+      const response = await fetch('https://healtcare-frontend.onrender.com/fetchingAllAppointment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ const PatientAppointment = () => {
   const handleAccept = async (key) => {
     console.log(`Updating status for appointment with key: ${key}`); // Debugging line
     try {
-      const response = await fetch('http://localhost:5000/updatebooking', {
+      const response = await fetch('https://healtcare-frontend.onrender.com/updatebooking', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
