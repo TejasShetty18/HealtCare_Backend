@@ -10,11 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
-    
-=======
     "axios": "^0.21.1",
->>>>>>> f808eb2836deeee515d712b88116da20f8a17828
     "@ant-design/icons": "^5.3.7",
     "@firebase/app": "^0.10.2",
     "@firebase/firestore": "^4.6.1",
