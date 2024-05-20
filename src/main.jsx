@@ -13,7 +13,7 @@ import {
 
 
 ////////////////login/////////////////////////////
-import Register from "./../layout/login/register.jsx";
+import Register from "./../layout/login/registeer.jsx";
 import Login from "./../layout/login/login.jsx";
 
 /////////////////patient side/////////////////////////
