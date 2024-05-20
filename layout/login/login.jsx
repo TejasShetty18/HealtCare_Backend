@@ -120,7 +120,7 @@ const Loginform = () => {
 
         <Form.Item>
           <span>Do not have an account? </span>
-          <a href="/register" className="red-link">Register</a>
+          <a href="/registeer" className="red-link">Register</a>
         </Form.Item>
       </Form>
     </div>
