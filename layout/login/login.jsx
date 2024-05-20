@@ -3,10 +3,11 @@
 
 import React, { useState } from "react";
 import { Form, Input, Button, Typography, message } from "antd";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "./authentication.js"; // Adjust the import path as needed
 import "../../src/index.css";
+
 
 const Loginform = () => {
   const [loginformData, setLoginFormData] = useState({
@@ -119,9 +120,9 @@ const Loginform = () => {
         </Form.Item>
 
         <Form.Item>
-          <span>Do not have an account? </span>
-          <a href="/registeer" className="red-link">Register</a>
-        </Form.Item>
+    <span>Do not have an account? </span>
+    <Link to="/register" className="red-link">Register</Link>
+  </Form.Item>
       </Form>
     </div>
   );
