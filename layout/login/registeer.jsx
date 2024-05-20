@@ -130,9 +130,9 @@ const MyForm = () => {
         </Form.Item>
 
         <Form.Item>
-          <span>Already registered? </span>
-          <a href="/" className="red-link">Login</a>
-        </Form.Item>
+    <span>Already registered? </span>
+    <Link to="/" className="red-link">Login</Link>
+  </Form.Item>
       </Form>
     </div>
   );
